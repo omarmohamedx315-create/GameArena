@@ -1,0 +1,289 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Chakra Petch" sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+::selection {
+  color: black;
+  background-color: #cbfe1c;
+}
+.my-hover-1:hover {
+  background-color: #cbfe1c;
+  color: #000 !important;
+}
+.color-1 {
+  background-color: #cbfe1c !important;
+}
+.my-color-2 {
+  color: #cbfe1c !important;
+}
+.my-color-3 {
+  color: aliceblue;
+}
+.my-color-4 {
+  color: #0b0e13 !important;
+}
+.my-bg {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.82), rgba(0, 0, 6, 0.902)),
+    url(../images/hero-bg-H6PoyNYD.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.my-border {
+  border: #cbfe1c solid 2px !important;
+}
+
+.my-position {
+  position: absolute;
+  bottom: 5%;
+  left: -10%;
+  border: solid white 1px;
+  border-radius: 10px;
+  background-color: #0b0e13;
+}
+header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+.my-icon {
+  background-color: #0b0e1309;
+  color: aliceblue !important;
+  height: 50px;
+  width: 50px;
+  border-radius: 3.125rem;
+  border: solid 2px #ffff;
+}
+.my-p {
+  position: relative;
+}
+.my-border-2 {
+  border: solid white 1px;
+  border-radius: 10px;
+  background-color: #0b0e13;
+}
+.my-border-3 {
+  border: solid white 1px;
+  border-radius: 5px;
+  background-color: #0b0e13;
+}
+.icon-2 {
+  background-color: #06193a;
+}
+.my-color-5 {
+  background-color: #1a1a1a;
+}
+.child-img {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+  transition: 1s ease;
+  
+  
+}
+
+.team {
+  position: absolute;
+
+  left: 10%;
+  right: 0;
+  bottom: 0;
+}
+
+.item-rot-img {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 40%;
+  left: 75%;
+}
+.item-img p {
+  font-size: 10px;
+}
+.curtion {
+  position: absolute;
+  top: 0;
+left: 0;
+height: 100%;
+  width: 100%;
+  background-color: #000000a9;
+ 
+ transition-duration: 1s;
+ z-index: 1;
+}
+.my-img-curtion:hover .curtion {
+  height: 0;
+  border-radius: 10px;
+
+
+}
+.my-img-curtion:hover  {
+  
+ border-radius: 5px
+
+}
+
+.my-img-curtion:hover .my-hover-2{
+  color: #cbfe1c;
+ 
+}
+
+.my-hover-3::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.361);
+}
+.my-hover-3:hover::before{
+animation: shine 1s ease;
+ 
+}
+@keyframes shine  {
+  0%{
+    left: -100%;
+  }
+100%{
+  left: 120%;
+}
+
+
+}
+
+.move-left img{
+width: 10%;
+padding: 5px;
+animation: moveleft 5s linear infinite;
+}
+
+.move-right img{
+width: 10%;
+padding:5px;
+animation: moveright 5s linear infinite;
+}
+
+@keyframes moveleft{
+0%{
+transform: translateX(0);
+}
+100%{
+transform: translateX(-100%);
+}
+}
+
+@keyframes moveright{
+0%{
+transform: translateX(0);
+}
+100%{
+transform: translateX(100%);
+}
+}
+.my-lennir{
+  background-image: radial-gradient(circle,#cbfe1c ,transparent 70% );
+}
+
+
+.my-span{
+  background-color: rgba(240, 248, 255, 0.527);
+border-radius: 10px ; 
+height: 20px;
+font-size:10px;
+
+margin-inline-end: 10px;
+ 
+
+}
+
+.my-hover-4:hover.child-img{
+ color: #C3FC29;
+ transform: translateY(10px);
+  opacity: 1;
+ 
+}
+
+.icon-location{
+  background-color: #CBFE1C;
+  width: 10%;
+  height:50px ;
+ text-align: center;
+padding: 10px;
+ border-radius: 50%;
+color: #000;
+}
+.location-child{
+  background-color: #1E2939;
+  color: aliceblue;
+}
+.links{
+ background:linear-gradient(to right, #C3FC29,  #28E070) ;
+  color: aliceblue;
+  
+  border-radius: 20px;
+  
+}
+
+
+.icon-3{
+  width:10% ;
+  height: 50px;
+  background-color: black;
+text-align: center;
+border-radius: 50%;
+padding: 10px;
+color: #C3FC29;
+cursor: pointer;
+
+}
+.icon-3:hover{
+  background-color: #263B20;
+}
+
+.my-form{
+  background-color: #1E2939;
+  padding: 20px;
+}
+
+.my-child-input:focus{
+  border: #C3FC29 solid 2px !important;
+  box-shadow: 0 0 #CBFE1C;
+}
+.my-textarea{
+  resize: none;
+}
+
+
+.my-footer{
+  cursor: pointer;
+}
+
+
+.span-hover:hover{
+color: #cbfe1c;
+}
